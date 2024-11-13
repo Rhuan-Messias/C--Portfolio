@@ -19,3 +19,27 @@ C# -> CONSOLE APPLICATION (Customer Order Id
                            Item Id
                            Item Description
                            Item Price)
+
+Will be created a view for a InnerJoin with the Customer and Item tables, in order to show everything in one table
+
+CREATE VIEW [dbo].[CustomerOrderDetail] AS
+SELECT
+	t1.CustomerOrderId,
+	t2.CustomerId,
+	t3.ItemId,
+	t2.FirstName,
+	t2.LastName,
+	t3.[Description], 
+	t3.Price
+	FROM
+		dbo.CustomerOrder t1 -- It's a variable that holds your table in it
+	INNER JOIN						 -- So you can reference your table just using this name
+		dbo.Customer t2 ON t2.CustomerId = t1.CustomerId
+	INNER JOIN
+		dbo.Item t3 ON t3.ItemId = t1.ItemId;
+
+
+We are gonna use this View to catch all the information and put in a List using C# console with .NET FrameWork, creating a class to be our model and another class for the commands
+We'll create a list holding our model and use foreach statement to print each information on the console.
+  
+####################### CUSTOMER ORDER VIEWER 2.0 #######################
