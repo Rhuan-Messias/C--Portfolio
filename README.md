@@ -43,3 +43,8 @@ We are gonna use this View to catch all the information and put in a List using 
 We'll create a list holding our model and use foreach statement to print each information on the console.
   
 ####################### CUSTOMER ORDER VIEWER 2.0 #######################
+Client wants to be able to view Customers, Items and Customer Order Details from before in a console window
+and wants to be able to know who created or updated new and existing customer orders. The client also asked for
+a method to remove customer orders but still keep the data in the database as historical data
+
+It's going to be used the Alter Table command to include the new information the client asked. 
