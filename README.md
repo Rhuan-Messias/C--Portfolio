@@ -41,6 +41,10 @@ SELECT
 
 We are gonna use this View to catch all the information and put in a List using C# console with .NET FrameWork, creating a class to be our model and another class for the commands
 We'll create a list holding our model and use foreach statement to print each information on the console.
+
+
+
+
   
 ####################### CUSTOMER ORDER VIEWER 2.0 #######################
 Client wants to be able to view Customers, Items and Customer Order Details from before in a console window
@@ -48,3 +52,10 @@ and wants to be able to know who created or updated new and existing customer or
 a method to remove customer orders but still keep the data in the database as historical data
 
 It's going to be used the Alter Table command to include the new information the client asked. 
+
+In order to make the connection with the DataBase easier, we'll use the Dapper library this time. So we can jump the connection and reading steps, and just send our Query straight.
+
+We'll create the Customer, Customer Order Detail and Item Models to create a possibility of a ShowAll() function that will bring all the tables for the console.
+For the tables of customers and items, we'll need only the GetList() command in order to access the data, but for the CustomerOrderDetail table, we'll create the commands using the
+Stored Procedures(SPROCs) created on the SQL Server, in order to delete, update or create rows. 
+
