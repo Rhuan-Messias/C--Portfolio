@@ -59,3 +59,5 @@ We'll create the Customer, Customer Order Detail and Item Models to create a pos
 For the tables of customers and items, we'll need only the GetList() command in order to access the data, but for the CustomerOrderDetail table, we'll create the commands using the
 Stored Procedures(SPROCs) created on the SQL Server, in order to delete, update or create rows. 
 
+The common structure for the files will be used. Being a Models folder for the models classes and a Repository folder for the command classes.
+
