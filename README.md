@@ -61,3 +61,22 @@ Stored Procedures(SPROCs) created on the SQL Server, in order to delete, update 
 
 The common structure for the files will be used. Being a Models folder for the models classes and a Repository folder for the command classes.
 
+
+  
+####################### COURSE REPORT EMAILER #######################
+The client will be providing the following information:
+	Courses
+ 	Students
+  	Enrollments
+The client would like an application which puts together all of the information in an Excel WorkBook in one WorkSheet and send an email to
+support@someCompany.com
+Subject of the email should be Enrollment Details Report
+Name of the generated file should be EnrollmentDetailsReport.xlsx
+Name of the worksheet should be Report Sheet
+The client would like the following fields to be shown
+	EnrollmentId
+ 	FirstName of student
+  	LastName of student
+   	CourseCode of the course being taken
+    	Description of the course being taken
+
