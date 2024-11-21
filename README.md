@@ -80,3 +80,13 @@ The client would like the following fields to be shown
    	CourseCode of the course being taken
     	Description of the course being taken
 
+
+####################### COURSE MANAGER #######################
+The client would like a graphical user interface to be able to manage existing enrollments and create new ones
+The form needs to: 
+	- Display all existing enrollments
+ 	- Display the student and course attached to the enrollment when one 	is selected
+  	- Display error messages and other statuses as they happen
+   	- Let user edit existing enrollment's student and/or course
+    	- Let user add new enrollment from existing students and courses
+     	- Once enrollment is edited or added, we need to know which user 	performed the action and when
