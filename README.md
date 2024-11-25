@@ -95,3 +95,4 @@ The form needs to:
 
 ####################### DIGIMON CRUD #######################
 In this project I will review the basics by creating a users's table, a digimon's table (digimon is like a pet, which each use can have only one), a view linking the two tables with join command, stored procedures for calling the view and each table, so I can use it with C# to create a console view. I will also create stored procedures for upsert and soft delete (instead of deleting, I will just turn active = 0), and a User Defined Type for use in the insert code in C#. This is a simple API just for practicing CRUD development.
+I will be using Dapper packet for access the SPROCs and UDDTs and Microsoft.Data.SqlClient for connecting to the database.
